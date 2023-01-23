@@ -248,6 +248,8 @@ GameObject:
   - component: {fileID: 7045515267965850821}
   - component: {fileID: 6655789938725874252}
   - component: {fileID: 2439674377120860713}
+  - component: {fileID: 8602421157234157871}
+  - component: {fileID: 3093184111181910645}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Projectile
@@ -370,3 +372,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34, y: 1.24}
   m_EdgeRadius: 0
+--- !u!114 &8602421157234157871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8840421169777527210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdc8b80496a88e42a923b2414a54d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletSpeed: 7
+--- !u!114 &3093184111181910645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8840421169777527210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fd41410ab7066428822f6e552c869c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  enemyTag: Zombie

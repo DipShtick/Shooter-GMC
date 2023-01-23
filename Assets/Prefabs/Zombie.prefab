@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 6969117729540747446}
   - component: {fileID: 6969117729540747447}
   - component: {fileID: 6969117729540747444}
+  - component: {fileID: 3637421493247792076}
+  - component: {fileID: 2426336323576885563}
+  - component: {fileID: 2578131539959928369}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -134,6 +137,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3637421493247792076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969117729540747445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1940622586987409d7a566abf3320e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+--- !u!114 &2426336323576885563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969117729540747445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3affb5945f950cc48ae5b17128060795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableOnDeath:
+  - {fileID: 3637421493247792076}
+  - {fileID: 2578131539959928369}
+  - {fileID: 6969117729540747447}
+  health: 100
+--- !u!114 &2578131539959928369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969117729540747445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fd41410ab7066428822f6e552c869c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  enemyTag: Player
 --- !u!1 &9008134393738994646
 GameObject:
   m_ObjectHideFlags: 0
