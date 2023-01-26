@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
@@ -7,9 +8,11 @@ public class HealthManager : MonoBehaviour
     public const float maxHP = 100;
     public float health = maxHP;
 
+	public Image hpBar;
     public void TakeDamage(float amount)
     {
-	    health -= amount; 
+	    health -= amount;
+		hpBar.fillAmount = health/100;
 
 	    if(health <= 0)
 	    {
