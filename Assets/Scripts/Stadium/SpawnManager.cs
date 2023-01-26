@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
     void Start()
     {
-		InvokeRepeating("Spawn", .5f, 2);
+		  InvokeRepeating("Spawn", .5f, 2);
     }
     
     Vector3 RandomCircle (Vector3 center, float radius)
@@ -22,9 +20,15 @@ public class SpawnManager : MonoBehaviour
     }
 
     public GameObject zombiePrefab;
+    int spawnCounter;
     void Spawn()
     {
-	    Vector2 position = RandomCircle(Vector3.zero, 20);
-	    Instantiate(zombiePrefab, position, Quaternion.identity);
+	    int numberOfZombies = Random.Range(2 + spawnCounter, 7 + spawnCounter);
+      
+      for (spawnCounter = 0; spawnCounter < numberOfZombies; spawnCounter++)
+      {
+        Vector2 position = RandomCircle(Vector3.zero, 20);
+        Instantiate(zombiePrefab, position, Quaternion.identity);
+      }
     }
 }
