@@ -1471,6 +1471,7 @@ MonoBehaviour:
   - {fileID: 1661721691}
   - {fileID: 1661721690}
   health: 100
+  hpBar: {fileID: 1830750796}
 --- !u!1 &1799220394
 GameObject:
   m_ObjectHideFlags: 3
@@ -1594,7 +1595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000043392, y: -0}
+  m_AnchoredPosition: {x: -0.000043392, y: 0}
   m_SizeDelta: {x: 427.2, y: 332.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830750796
